@@ -117,6 +117,9 @@ function getActiveThemePaths() {
 }
 
 frontendControllers = {
+    'resume': function (req, res, next) {
+      res.end('hello');
+    },
     'homepage': function (req, res, next) {
         // Parse the page number
         var pageParam = req.params.page !== undefined ? parseInt(req.params.page, 10) : 1,

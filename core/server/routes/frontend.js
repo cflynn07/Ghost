@@ -30,6 +30,9 @@ frontendRoutes = function () {
     router.get('/author/:slug/page/:page/', frontend.author);
     router.get('/author/:slug/', frontend.author);
 
+    // Personal Additions
+    router.get('/resume', frontend.resume);
+
     // Default
     router.get('/page/:page/', frontend.homepage);
     router.get('/', frontend.homepage);
